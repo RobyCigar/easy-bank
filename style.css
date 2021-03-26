@@ -222,10 +222,13 @@
 .sct3__cards {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 200px;
 }
 
 .sct3__card {
 	margin: 10px;
+	width: 270px;
 }
 
 .sct3__card > img {
@@ -355,7 +358,7 @@
 	color: #9F9EF0;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 
 	.navbar__link, .navbar__btn {
 		display: none;
@@ -410,5 +413,11 @@
 	.foot__flex, .sct2__cards, .sct3__cards {
 		flex-direction: column;
 		margin: 0 40px;
+	}
+}
+
+@media only screen and (max-width: 950px) {
+	.sct__title {
+		margin: 200px 0 0 0;
 	}
 }
